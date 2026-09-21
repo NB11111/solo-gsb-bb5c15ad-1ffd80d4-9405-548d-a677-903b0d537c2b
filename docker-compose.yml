@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    image: breath-relay:latest
+    container_name: breath-relay
+    ports:
+      - "8080:80"
+    restart: unless-stopped
